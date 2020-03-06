@@ -32,14 +32,15 @@ module.exports = {
     'import/no-unresolved': 'off',
     'max-len': 'off',
     'no-unused-vars': 'off',
-    'linebreak-style': [
-      0,
-      'error',
-      'windows'
-    ],
-    'semi': [
-      'error',
-      'never'
+    'linebreak-style': [0, 'error', 'windows'],
+    'semi': ['error', 'never'],
+    "import/no-extraneous-dependencies": [
+      "error", {
+         "devDependencies": false,
+         "optionalDependencies": false,
+         "peerDependencies": false,
+         "packageDir": "./"
+      }
     ]
   },
 };
