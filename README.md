@@ -1,24 +1,14 @@
-# my-app
+### My personal Vuejs boilerplate
 
-## Project setup
-```
-yarn install
-```
+**Stack**:
+<br />
+- Vue CLI <br>
+- Pug <br>
+- SASS <br>
+- BEM <br>
+- Express <br>
+<br>
+The project has a express server to serve static files in Heroku. <br>
+I also setup a pipeline to automatic deploy changes in master branch.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Att, Eber ✌
