@@ -27,6 +27,7 @@ export default {
     align-items: center
     height: 70px
     &__title
+      font-family: 'Roboto', sans-serif
       color: $text
       font-size: 22px
     &__emoji
