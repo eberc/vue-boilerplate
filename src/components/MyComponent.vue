@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    .container__pointer
+    h2 🌞
 
 </template>
 
@@ -22,22 +22,13 @@ export default {
     display: flex
     justify-content: center
     align-items: flex-start
-    width: 300px
-    height: 300px
-    border-radius: 100%
-    background-color: rebeccapurple
     animation-name: spin
-    animation-duration: 60s
+    animation-duration: 3000ms
     animation-iteration-count: infinite
     animation-timing-function: linear
     animation-fill-mode: forwards
-    &__pointer
-      position: relative
-      top: -21px
-      width: 50px
-      height: 50px
-      transform: rotate(45deg)
-      background-color: rebeccapurple
+    h2
+      transform: scale(3)
   @keyframes spin
     from
       transform: rotate(0deg)

@@ -13,7 +13,7 @@
     "lint": "vue-cli-service lint",
     "wc": "vue-cli-service build --target wc --name vue src/components/*.vue",
     "start": "node server.js",
-    "heroku-postbuild": "npm run wc"
+    
   },
   "dependencies": {
     "core-js": "^3.6.4",
