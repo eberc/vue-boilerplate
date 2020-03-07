@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "12.13.x"
+    "node": "12.13.x",
+    "npm": "6.12.x"
   },
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "wc": "vue-cli-service build --target wc --name vue src/components/&vue",
-    "postinstall": "npm i -S lodash && if test \"$NODE_ENV\" = \"production\" ; then yarn build ; fi ",
+    "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
     "start": "node server.js"
   },
   "dependencies": {
