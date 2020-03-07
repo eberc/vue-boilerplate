@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "main": "./dist/vue-wc.js",
   "engines": {
     "node": "12.13.x",
     "npm": "6.12.x",
@@ -13,7 +12,6 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "wc": "vue-cli-service build --target wc --name vue-wc src/components/*.vue",
-    "start": "node server.js",
     "heroku-postbuild": "npm run wc"
   },
   "dependencies": {
