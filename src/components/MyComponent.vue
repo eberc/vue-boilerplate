@@ -1,6 +1,7 @@
 <template lang="pug">
   .container
-    h2 🌞
+    .container__emoji 🌞
+    .container__title {{ msg }}
 
 </template>
 
@@ -17,21 +18,29 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  @import @styles
   .container
     position: relative
     display: flex
-    justify-content: center
-    align-items: flex-start
-    animation-name: spin
-    animation-duration: 3000ms
-    animation-iteration-count: infinite
-    animation-timing-function: linear
-    animation-fill-mode: forwards
-    h2
-      transform: scale(3)
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 70px
+    &__title
+      color: $text
+      font-size: 22px
+    &__emoji
+      font-size: 36px
+      animation-name: spin
+      animation-duration: 5000ms
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+      animation-fill-mode: forwards
   @keyframes spin
-    from
-      transform: rotate(0deg)
-    to
-      transform: rotate(360deg)
+    0%
+      transform: rotate(0deg) scale(1)
+    50%
+      transform: rotate(360deg) scale(1.5)
+    100%
+      transform: rotate(720deg) scale(1)
 </style>

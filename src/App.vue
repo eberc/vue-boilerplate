@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-my-component />
+    <vue-my-component msg="here comes the sun tchurururu" />
   </div>
 </template>
 
