@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <vue-my-component msg="here comes the sun tchurururu" />
+    <vue-my-component :msg="msg" />
+    <vue-input />
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
+  computed: {
+    msg() {
+      return this.$store.state.msg
+    },
+  },
 }
 </script>
-<style lang="sass">
-  @import @styles
-  #app
-    display: flex
-    justify-content: center
-    align-items: center
-    font-family: 'Roboto', sans-serif
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    color: $text-light
+<style lang="scss">
+  @import '@styles';
+  #app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     color: get($colors, text-light);
+  }
 </style>
