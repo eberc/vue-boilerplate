@@ -3,8 +3,7 @@
 **Stack**:
 <br />
 - Vue CLI <br>
-- Pug <br>
-- SASS <br>
+- SCSS <br>
 - BEM <br>
 - Express <br>
 <br>
