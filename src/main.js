@@ -2,6 +2,7 @@ import Vue from 'vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 import store from '@store'
+import windowSize from './mixins/WindowSize'
 import App from './App.vue'
 
 const requireComponent = require.context(
@@ -37,6 +38,9 @@ requireComponent.keys().forEach((fileName) => {
     componentConfig.default || componentConfig,
   )
 })
+
+// Mixins
+Vue.mixin(windowSize)
 
 new Vue({
   store,
