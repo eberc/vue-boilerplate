@@ -1,22 +1,31 @@
 <template>
   <div class="container">
     <div class="container__emoji">
-      🌞
+      🌎
     </div>
     <div class="container__title">
       {{ msg }}
     </div>
   </div>
+
 </template>
 
 <script>
+import windowSize from '../mixins/WindowSize'
+
 export default {
-  name: 'VueMyComponent',
+  name: 'VueHelloWorld',
+  mixins: [windowSize],
   props: {
     msg: {
       type: String,
       default: null,
     },
+  },
+  data() {
+    return {
+      username: 'alooooo',
+    }
   },
 }
 </script>

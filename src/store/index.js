@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    msg: 'here comes the sun tchururu',
+    msg: 'hello world',
     count: 10,
   },
 })
