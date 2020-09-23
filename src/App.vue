@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <vue-my-component :msg="msg" />
-    <vue-input />
+    <vue-hello-world :msg="msg" />
+    <!-- <vue-input /> -->
   </div>
 </template>
 
@@ -20,9 +20,10 @@ export default {
   #app {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
